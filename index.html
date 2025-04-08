@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Звуки передач</title>
+</head>
+<body>
+    <audio id="gearSound" preload="auto"></audio>
+    <script type="text/javascript">
+        const audio = document.getElementById("gearSound");
+
+        window.addEventListener('message', function(event) {
+            if (event.data.type === "playSound") {
+                audio.src = `sound/${event.data.sound}.wav`;
+                audio.volume = event.data.volume || 1.0; // Устанавливаем громкость, по умолчанию 1.0
+                audio.play().catch(error => console.log("Ошибка воспроизведения:", error));
+            }
+        });
+    </script>
+</body>
+</html>
