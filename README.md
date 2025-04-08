@@ -5,7 +5,6 @@
 
 > Immersive manual transmission experience for FiveM servers with authentic gear shift sounds
 
-![Showcase](https://via.placeholder.com/800x400?text=Gear+Shift+Sound+Demo)
 
 ## ✨ Features
 - 🔊 **Realistic gear shift sounds** (clutch, gear grind, successful shift)
